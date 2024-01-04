@@ -1,0 +1,70 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*3.2.2 E Background Style*/
+body{
+    margin:0;
+    background-color:white;
+}
+
+header{
+    text-align:center;
+    background-color: #1a1816;
+    
+}
+
+/*3.2.2 A(III) Apearance of header*/
+#title{
+    margin:0;
+    padding:10px;
+    border-bottom:5px solid #524b45;
+    font-size:3em;
+    letter-spacing: 7px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #800a01;
+    display:block;
+}
+
+a.menuBut{
+    width:24%;
+    display:inline-block;
+    padding-top:10px;
+    padding-bottom:15px;
+    font-size:1.5em;
+    text-decoration:none;
+    font-weight: bold;
+    color:#D5A021;
+}
+
+/*3.2.2 D(I) Use of structural pseudoclass for link*/
+/*3.2.2 D(III) Use of structural pseudoclass*/
+a.menuBut:hover{
+    background-color:HSLA(28, 9%, 30%, 70%);
+}
+
+footer{
+    text-align:center;
+    padding:15px 0 15px 0;
+    color:#D5A021;
+    letter-spacing:3px;
+    background-color:#1a1816;
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+
+footer a{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+/*3.2.2 A(I) Apearance of paragraph*/
+footer p{
+    font-size:1em;
+}
+
+footer img{
+    float:none;
+    box-shadow: none;
+}

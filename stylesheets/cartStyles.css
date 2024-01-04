@@ -1,0 +1,59 @@
+/*3.2.7 D Responsive form*/
+/*3.2.2 A(VI) Apearance of form*/
+input{
+    font-size:1em;
+    border-radius:5px;
+    
+}
+
+select{
+    font-size:1.25em;
+    border-radius:5px;
+    width:210px;
+}
+
+label{
+    font-size:1em;
+}
+
+#edition label{
+display:block;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+fieldset{
+    border:none;
+}
+td{
+    padding:5px 0px 5px 0px;
+}
+
+#tableaux{
+    width:60%; 
+    margin:40px auto 40px auto; 
+    background-color: white;
+    padding:15px 50px 15px 50px;
+    border-radius:10px;
+    min-height:600px;
+}
+
+#tableaux caption{
+    font-size: 2em;
+    font-weight:bold;
+    text-align:center;
+}
+
+.right{
+    text-align:left;
+    }
+
+.right input{
+    float:right;
+    width:150px;
+}
+
+#edition{
+    padding:0;
+}
+

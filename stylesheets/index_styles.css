@@ -1,0 +1,45 @@
+#newbook{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    overflow:auto;
+    border-bottom:2px solid black;
+}
+div.blog{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    overflow:auto;
+    border-bottom:2px solid black;
+}
+
+/*3.2.2 F(II) Float layout*/
+div img{
+    float:left;
+    position: relative;
+    /*3.2.2 E(VI) Rounded borders*/
+    border-radius: 10px;
+}
+aside{
+    float:left;
+    display:inline-block;
+    width:50%;
+    margin-left:30px;
+}
+p{
+    font-size: 1.2em;
+    line-height:1.5em;
+}
+
+/*3.2.2 A(II) Apearance of list*/
+li{
+    font-size:1.2em;
+    list-style-type: none;
+    line-height:1.5em;
+}
+
+ul{
+    padding-left:0;
+}

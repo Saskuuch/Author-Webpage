@@ -1,0 +1,53 @@
+/*3.2.2 F(I) Grid Layout*/
+/*3.2.2 G(II) Use of box shadow*/
+img{
+    width:25%;
+    float:left;
+    /*3.2.2 C(II) Use of hsla*/
+    box-shadow:6px 6px hsla(196, 30%, 30%, 0.2);
+}
+
+aside{
+    width:57%;
+    margin-top:0;
+    padding:20px;
+    float:right;
+    display:inline-block;
+    border-radius:5px;
+    
+}
+p{
+    font-size:1.5em;
+}
+
+div{
+    height:auto;
+    margin: 15px 150px 15px 150px;
+    overflow:auto;
+}
+
+h1{
+    margin-left:25px;
+    margin-right:25px;
+    border-bottom:2px solid black;
+}
+
+/*3.2.2 B Use of contextual selector*/
+a.buy{
+    text-decoration:none;
+    color:white;
+    background-color:#08B2E3;
+    font-size:1.5em;
+    border-radius:5px;
+    display:inline-block;
+    width:100px;
+    text-align: center;
+    /*3.2.2 E(II) Use of padding*/
+    padding:5px 15px 5px 15px;
+    /*3.2.5 B Use of transition/animation*/
+    transition:0.5s font-size;
+}
+
+a.buy:hover{
+    font-size:1.75em;
+}

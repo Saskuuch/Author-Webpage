@@ -1,0 +1,58 @@
+/*3.2.3 B style to web form*/
+#shipping{
+    width:40%;
+    margin:50px auto 50px 100px;
+    text-align:left;
+}
+
+#OrderSum{
+    
+    margin:50px 100px 50px auto;
+    text-align:left;
+    display:inline-block;
+    position:absolute;
+    right:0px;
+    top:130px;
+    border-collapse:collapse;
+    line-height:2em;
+}
+
+caption{
+    font-weight:bold;
+}
+
+input{
+    font-size: 1.25em;
+    border-radius:5px;
+}
+
+/*3.2.3 C Inline validation using focus pseudoelement*/
+input:focus{
+    background-color:#77a4ed;
+}
+
+#OrderSum input{
+    border:none;
+}
+
+textarea{
+    font-size: 1.25em;
+    border-radius:5px;
+}
+
+td{
+    padding:10px 0 10px 0;
+}
+
+form{
+    display:inline-block;
+}
+
+.left{
+    width:200px;
+}
+
+/*3.2.2 D(II) Use of structural pseudoclass 1*/
+#OrderSum input:not(.left){
+    text-align:right;
+}

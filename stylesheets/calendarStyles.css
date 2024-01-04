@@ -1,0 +1,42 @@
+#calendar{
+    /*HTML 3.2.2 C(I) RGBA colour*/
+    border:15px rgba(86,49,0,0.8) ridge;
+    border-radius:5px;
+    /*HTML 3.2.1 C Background image*/
+    background-image:url("../Images/calendarBack.jpg");
+    /*HTML 3.2.2 A(IV) Background image style*/
+    /*HTML 3.2.2 H(I) Semi-transparent image*/
+    opacity:0.9;
+}
+th{
+    width:14%;
+    font-size:1.25em;
+}
+
+/*HTML 3.2.2 A(V) Apearance of a table*/
+table{
+    width:90%;
+    margin:50px;
+    
+}
+
+td{
+    height:150px;
+    vertical-align:top;
+    /*3.2.2 E(V) Border style*/
+    border:2px rgba(162, 99, 16, 0.47) dashed;
+}
+
+caption{
+    margin-bottom:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2.5em;
+    letter-spacing:5px;
+    /*3.2.2 G(I) Use of text shadow*/
+    text-shadow:1px 1px black;
+}
+
+a{
+    text-decoration:none;
+    color:#1A1B41
+}

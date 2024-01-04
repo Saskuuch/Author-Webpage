@@ -1,0 +1,191 @@
+<!--3.2.3 A Use of form elements-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samuel McPherson || Purchase</title>
+    <link href="stylesheets\styles1.css" rel="stylesheet">
+    <link href="stylesheets\purchaseStyles.css" rel="stylesheet">
+    <script src="javascript\purchase_update.js" defer></script>
+    <script src="javascript\footer_update.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Samuel McPherson</h1>
+        <nav>
+            <a class="menuBut" href="index.html">Home</a>
+            <a class="menuBut" href="books.html">Books</a>
+            <a class="menuBut" href="events.html">Events</a>
+            <a class="menuBut" href="about.html">About</a>
+        </nav>
+    </header>
+    <form action="index.html" onsubmit="return validate(this);">
+        <table id="shipping">
+                <caption>Shipping Details</caption>
+                
+                <tr>
+                    <td  colspan="2">
+                        <label for="email">
+                            Email Address: <br/>
+                            <input name="email" id="email" type="email"  required>
+                        </label>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <label for="fName">
+                            First Name (optional): <br/>
+                            <input name="fName" id="fName" type="text">
+                        </label>
+                    </td>
+                
+                    <td>
+                        <label for="lName">
+                            Last Name:<br/>
+                            <input name="lName" id="lName" type="text" required>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="country">
+                            Country:<br/>
+                            <input list="country" placeholder="Canada" required>
+                            <datalist id="country">
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="United Kingdom">United Kingdom</option> 
+                                <option value="United States">United States</option>
+                            </datalist>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="province">
+                            State/Province: <br/>
+                            <input name="province" id="province" type="text" required>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label for="address">
+                            Address:<br/>
+                            <textarea name="address" id="address" cols="55" rows="4" required></textarea>
+                        </label>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">
+                            City:<br/>
+                            <input name="city" id="city" type="text" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="postal">
+                            Postal/Zip Code:<br/>
+                            <input name="postal" id="postal" type="text" required>
+                        </label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <label for="phone">
+                            Phone:<br/>
+                            <input name="phone" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="card">
+                            Visa/Mastercard:<br/>
+                            <input name="card" id="card" type="text" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" required>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="expire">
+                            Expiration Date (month/year):<br/>
+                            <input name="expire" id="expire" type="text" pattern="[0-1]{1}[0-9]{1}/[0-9]{2}" placeholder="01/29" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="cvs">
+                            CVS Code:<br/>
+                            <input name="cvs" id="cvs" type="text" pattern="[0-9]{3}" placeholder="111" required>
+                        </label>
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit">
+                    </td>
+                </tr>   
+                 
+        </table>
+    </form>
+
+    <table id="OrderSum">
+        <caption>Order Summary</caption>
+        <tr>
+            <td class="left"></td>
+            <td>
+                <input name="orderDate" id="orderDate" type="text" readonly style="border:none;">
+            </td>
+        </tr>
+
+        <tr>
+            <td id="bookName" class="left"></td>
+            <td>
+                <input name="bookCost" id="bookCost" type="text" readonly>
+            </td>
+        </tr>
+
+        <tr style="border-bottom:4px solid #524b45;">
+            <td id="format" class="left"></td>
+            <td>
+                <input name="formatCost" id="formatCost" type="text" readonly>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="left">Subtotal</td>
+            <td>
+                <input name="subtotal" id="subtotal" type="text" readonly>
+            </td>
+        </tr>
+
+        <tr style="border-bottom:8px double #524b45;">
+            <td class="left" >Taxes</td>
+            <td>
+                <input name="taxes" id="taxes" type="text" readonly>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="left" >Total</td>
+            <td>
+                <input name="total" id="total" type="text" readonly>
+            </td>
+        </tr>
+    </table>
+</body>
+<footer>
+    <p id="update"></p>
+    <!--3.2.1 B(II) Inline clickable image-->
+    <a href="https://www.facebook.com"><img style="width:35px;" src="Images/facebook_icon.png"></a>
+    <a href="https://www.instagram.com"><img style="width:35px;" src="Images/intagram_icon.png"></a>
+    <a href="https://www.twitch.tv"><img style="width:35px;" src="Images/twitch_icon.png"></a>
+</footer>

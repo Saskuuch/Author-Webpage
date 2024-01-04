@@ -1,0 +1,127 @@
+<!--3.2.7 D Responsive webform-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Samuel McPherson || Cart</title>
+    <link href="stylesheets\styles1.css" rel="stylesheet">
+    <link href="stylesheets\cartStyles.css" rel="stylesheet">
+    <script src="javascript\cart_update.js" defer></script>
+    <script src="javascript\footer_update.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Samuel McPherson</h1>
+        <nav>
+            <a class="menuBut" href="index.html">Home</a>
+            <a class="menuBut" href="books.html">Books</a>
+            <a class="menuBut" href="events.html">Events</a>
+            <a class="menuBut" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <form id="Purchaseform" name="Purchaseform" method="get" action="Purchase.html">
+        
+        <table id="tableaux">
+            <caption>Order</caption>
+            <tr id="book">
+                <td><label>Book</label> 
+                    <select name="bookC" id="bookC">
+                        <option value="10.12">Will's Inferno</option>
+                        <option value="2.39">To Bail Moré</option>
+                        <option value="5.62">Melting Ice</option>
+                        <option value="3.68">The Current's Pull</option>
+                        <option value="4.37">The Burned Ones</option>
+                    </select>
+                </td>
+                <td class="right">
+                    <label>
+                        Cost of Book:
+                        <input type="text" name="bookcost" id="bookcost" size="10" readonly>
+                    </label>
+                </td>
+            </tr>
+            <tr id="version">
+                <td>
+                    <fieldset id=edition>
+                        <label>
+                            <input type=radio id="mmpaper" name="edit" value="15.38" checked>
+                            Mass-Market Paperback ($15.38)
+                        </label>
+                        <label>
+                            <input type=radio id="paper" name="edit" value="20.47">
+                            Paperback ($20.47)
+                        </label>
+                        <label>
+                            <input type=radio id="hard" name="edit" value="25.19">
+                            Hardcover ($25.19)
+                        </label>
+                        <label>
+                            <input type=radio id="audio" name="edit" value="9.63">
+                            Audiobook ($9.63)
+                        </label>
+                        <label>
+                            <input type=radio id="ebook" name="edit" value="4.99">
+                            EBook ($4.99)
+                        </label>
+                    </fieldset>
+                </td>
+                <td class="right"  style="border-bottom:4px solid #524b45;">
+                    <label>
+                        Edition Cost:
+                        <input type="text" name="editcost" id="editcost" size="10" readonly>
+                    </label>
+                </td>
+            </tr>
+            <tr id="sbtotal">
+                <!--3.2.1 H(II) semi-transparent image 2-->
+                <!--3.2.7 C Responsive image-->
+                <td rowspan="3" width="50%;"><img id="bookCover" src="covers\Will's Inferno.png" style="width:80%; opacity: 0.9;"></td>
+                <td class="right">
+                    <label>
+                        Subtotal:
+                        <input type="text" name="subtotal" id="subtotal" size="10" readonly>
+                    </label>
+                </td>
+            </tr>
+
+            <tr id="tax">
+            
+                <td class="right" style="border-bottom:8px double #524b45;">
+                    <label>
+                        Taxes:
+                        <input type="text" name="taxes" id="taxes" size="10" readonly>
+                    </label>
+                </td>
+            </tr>
+            <tr id="total">
+                
+                <td class="right">
+                    <label>
+                        Total:
+                        <input type="text" name="tot" id="tot" size="10" readonly>
+                    </label>
+                </td>
+            </tr>
+
+            <tr id="total">
+                <td></td>
+                <td class="right">
+                    <label>
+                        <input name="bookName" id="bookName" type="text" hidden>
+                        <input name="editName" id="editName" type="text" hidden>
+                        <input type="submit">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+<footer>
+    <p id="update"></p>
+    <!--3.2.1 B(II) Inline clickable image-->
+    <a href="https://www.facebook.com"><img style="width:35px;" src="Images/facebook_icon.png"></a>
+    <a href="https://www.instagram.com"><img style="width:35px;" src="Images/intagram_icon.png"></a>
+    <a href="https://www.twitch.tv"><img style="width:35px;" src="Images/twitch_icon.png"></a>
+</footer>
